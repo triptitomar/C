@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <string.h>
+int main(){
+char s[100];
+int n;
+printf("enter the string:");
+gets(s);
+printf("enter the position:");
+scanf("%d",&n);
+s[n-1]=s[n-1]-32;
+puts(s);
+}
