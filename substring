@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+int main(){
+    char s1[100],s2[100];
+    int i,m,n;
+    printf("enter the string s1:");
+    gets(s1);
+    printf("enter the string s2:");
+    gets(s2);
+    m = strlen(s1);
+    n = strlen(s2);
+    for (i = 0; i <= n - m; i++) {
+        for (int j= 0; j < m; j++){
+            if (s2[i + j] != s1[j])
+                break;
+            if (j == m)
+            return i;
+    }
+    return -1;
+}
+}
