@@ -1,0 +1,30 @@
+#include<conio.h>
+#include<stdio.h>
+static int kadane(int Array[], int n){
+ int i, max_sum=0;
+ int current_sum=0;
+ for(i=0;i<n;i++)
+ {
+ current_sum = current_sum + Array[i];
+ if(current_sum < 0)
+  current_sum = 0;
+  if(max_sum = current_sum)
+     max_sum = current_sum;
+  }
+  return max_sum;
+  }
+int main()
+{
+  int MyArray[10];
+  int n,i;
+  clrscr();
+  printf("enter size: ");
+  scanf("%d",&n);
+  for(i=0; i<n; i++)
+  {
+    scanf("%d",&MyArray[i]);
+    }
+    printf("Maximum Subarray is : %d", kadane(MyArray,n));
+    getch();
+    return 0;
+  }
